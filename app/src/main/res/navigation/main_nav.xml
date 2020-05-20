@@ -17,6 +17,9 @@
         <action
             android:id="@+id/action_mainFragment_to_feature2OneFragment"
             app:destination="@id/feature2OneFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_feature2Activity"
+            app:destination="@id/feature2Activity" />
     </fragment>
 
     <!-- feature1 内部有着独立的 graph-->
@@ -31,6 +34,24 @@
         android:id="@+id/feature2OneFragment"
         android:name="com.flywith24.dynamicfeaturedemo.feature2.Feature2OneFragment"
         android:label="Feature2OneFragment"
-        app:moduleName="feature2" />
+        app:moduleName="feature2"
+        tools:layout="@layout/fragment_feature2">
+        <action
+            android:id="@+id/action_feature2OneFragment_to_feature2TwoFragment"
+            app:destination="@id/feature2TwoFragment" />
+    </fragment>
+
+    <!-- 直接引用 feature2 内部的 fragment-->
+    <fragment
+        android:id="@+id/feature2TwoFragment"
+        android:name="com.flywith24.dynamicfeaturedemo.feature2.Feature2TwoFragment"
+        android:label="Feature2TwoFragment"
+        app:moduleName="feature2"
+        tools:layout="@layout/fragment_feature2" />
+    <activity
+        android:id="@+id/feature2Activity"
+        android:name="com.flywith24.dynamicfeaturedemo.feature2.Feature2Activity"
+        app:moduleName="feature2"
+        android:label="Feature2Activity" />
 
 </navigation>

@@ -15,11 +15,10 @@ import kotlinx.android.synthetic.main.fragment_main.*
  */
 class MainFragment : Fragment(R.layout.fragment_main) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        include.setOnClickListener {
-            findNavController().navigate(R.id.action_mainFragment_to_featureOneFragment)
-        }
-        fragment.setOnClickListener {
-            findNavController().navigate(R.id.action_mainFragment_to_feature2OneFragment)
-        }
+
+        btnInclude.setOnClickListener { findNavController().navigate(R.id.action_mainFragment_to_featureOneFragment) }
+        btnFragment.setOnClickListener { findNavController().navigate(R.id.action_mainFragment_to_feature2OneFragment) }
+        btnActivity.setOnClickListener { findNavController().navigate(R.id.action_mainFragment_to_feature2Activity) }
     }
+
 }

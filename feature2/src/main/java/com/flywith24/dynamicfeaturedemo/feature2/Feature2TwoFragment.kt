@@ -6,12 +6,9 @@ import android.view.View
 import androidx.fragment.app.Fragment
 import kotlinx.android.synthetic.main.fragment_feature2.*
 
-class Feature2OneFragment : Fragment(R.layout.fragment_feature2) {
+class Feature2TwoFragment : Fragment(R.layout.fragment_feature2) {
     @SuppressLint("SetTextI18n")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        title.setOnClickListener {
-
-        }
-        title.text = "Feature2One"
+        title.text = "Feature2Two"
     }
 }
