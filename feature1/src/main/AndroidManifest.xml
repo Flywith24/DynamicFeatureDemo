@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:dist="http://schemas.android.com/apk/distribution"
-    package="com.flywith24.feature1">
+    package="com.flywith24.dynamicfeaturedemo.feature1">
 
     <dist:module
         dist:instant="false"
@@ -11,4 +11,3 @@
         <dist:fusing dist:include="true" />
     </dist:module>
 </manifest>
-

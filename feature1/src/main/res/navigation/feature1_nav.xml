@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/featureOneFragment"
+    tools:ignore="UnusedNavigation">
+
+    <fragment
+        android:id="@+id/featureOneFragment"
+        android:name="com.flywith24.dynamicfeaturedemo.feature1.FeatureOneFragment"
+        android:label="FeatureOneFragment" >
+        <action
+            android:id="@+id/action_featureOneFragment_to_fragmentTwoFragment"
+            app:destination="@id/fragmentTwoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentTwoFragment"
+        android:name="com.flywith24.dynamicfeaturedemo.feature1.FragmentTwoFragment"
+        android:label="FragmentTwoFragment" />
+</navigation>

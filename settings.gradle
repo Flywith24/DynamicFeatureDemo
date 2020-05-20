@@ -1,4 +1,4 @@
+include ':feature1'
 rootProject.name='DynamicFeatureDemo'
 include ':app'
-include ':feature1'
 include ':baselib'

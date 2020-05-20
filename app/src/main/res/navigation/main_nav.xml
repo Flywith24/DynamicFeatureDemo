@@ -12,15 +12,15 @@
         android:label="MainFragment">
         <action
             android:id="@+id/action_mainFragment_to_featureOneFragment"
-            app:destination="@id/f1" />
-
+            app:destination="@id/feature1" />
     </fragment>
-
     <include-dynamic
-        android:id="@+id/f1"
-        app:graphPackage="com.flywith24.feature1"
-        app:graphResName="feature1_graph"
+        android:id="@+id/feature1"
+        app:graphPackage="com.flywith24.dynamicfeaturedemo.feature1"
+        app:graphResName="feature1_nav"
         app:moduleName="feature1" />
+
+
     <!--    <fragment
             android:id="@+id/featureOneFragment"
             android:name="com.flywith24.feature1.Feature1Fragment"
