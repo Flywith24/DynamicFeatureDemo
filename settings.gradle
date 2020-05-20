@@ -1,3 +1,4 @@
+include ':feature2'
 include ':feature1'
 rootProject.name='DynamicFeatureDemo'
 include ':app'

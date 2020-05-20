@@ -6,6 +6,7 @@
     app:startDestination="@id/mainFragment"
     tools:ignore="UnusedNavigation">
 
+    <!-- app 内的 MainFragment -->
     <fragment
         android:id="@+id/mainFragment"
         android:name="com.flywith24.dynamicfeaturedemo.MainFragment"
@@ -13,16 +14,23 @@
         <action
             android:id="@+id/action_mainFragment_to_featureOneFragment"
             app:destination="@id/feature1" />
+        <action
+            android:id="@+id/action_mainFragment_to_feature2OneFragment"
+            app:destination="@id/feature2OneFragment" />
     </fragment>
+
+    <!-- feature1 内部有着独立的 graph-->
     <include-dynamic
         android:id="@+id/feature1"
         app:graphPackage="com.flywith24.dynamicfeaturedemo.feature1"
         app:graphResName="feature1_nav"
         app:moduleName="feature1" />
 
+    <!-- 直接引用 feature2 内部的 fragment-->
+    <fragment
+        android:id="@+id/feature2OneFragment"
+        android:name="com.flywith24.dynamicfeaturedemo.feature2.Feature2OneFragment"
+        android:label="Feature2OneFragment"
+        app:moduleName="feature2" />
 
-    <!--    <fragment
-            android:id="@+id/featureOneFragment"
-            android:name="com.flywith24.feature1.Feature1Fragment"
-            app:moduleName="feature1" />-->
 </navigation>

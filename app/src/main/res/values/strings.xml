@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">DynamicFeatureDemo</string>
     <string name="title_feature1">feature1</string>
+    <string name="title_feature2">feature2</string>
+    <string name="app_include">include</string>
+    <string name="app_fragment">fragment</string>
+    <string name="app_main">AppMain</string>
 </resources>
