@@ -1,0 +1,4 @@
+rootProject.name='DynamicFeatureDemo'
+include ':app'
+include ':feature1'
+include ':baselib'

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/mainFragment"
+    tools:ignore="UnusedNavigation">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.flywith24.dynamicfeaturedemo.MainFragment"
+        android:label="MainFragment">
+        <action
+            android:id="@+id/action_mainFragment_to_featureOneFragment"
+            app:destination="@id/f1" />
+
+    </fragment>
+
+    <include-dynamic
+        android:id="@+id/f1"
+        app:graphPackage="com.flywith24.feature1"
+        app:graphResName="feature1_graph"
+        app:moduleName="feature1" />
+    <!--    <fragment
+            android:id="@+id/featureOneFragment"
+            android:name="com.flywith24.feature1.Feature1Fragment"
+            app:moduleName="feature1" />-->
+</navigation>

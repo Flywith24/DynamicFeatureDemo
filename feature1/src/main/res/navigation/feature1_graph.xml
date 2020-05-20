@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/feature1_graph"
+    app:startDestination="@id/feature1FragmentOne"
+    tools:ignore="UnusedNavigation">
+
+    <fragment
+        android:id="@+id/feature1FragmentOne"
+        android:name="com.flywith24.feature1.Feature1FragmentOne"
+        android:label="Feature1FragmentOne"
+        tools:layout="@layout/fragment_feature1" >
+        <action
+            android:id="@+id/action_feature1FragmentOne_to_feature1FragmentTwo"
+            app:destination="@id/feature1FragmentTwo" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/feature1FragmentTwo"
+        android:name="com.flywith24.feature1.Feature1FragmentTwo"
+        android:label="Feature1FragmentTwo"
+        tools:layout="@layout/fragment_feature1" />
+</navigation>
