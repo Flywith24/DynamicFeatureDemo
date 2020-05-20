@@ -2,11 +2,11 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    app:startDestination="@id/featureOneFragment"
+    app:startDestination="@id/feature1OneFragment"
     tools:ignore="UnusedNavigation">
 
     <fragment
-        android:id="@+id/featureOneFragment"
+        android:id="@+id/feature1OneFragment"
         android:name="com.flywith24.dynamicfeaturedemo.feature1.Feature1OneFragment"
         android:label="FeatureOneFragment" >
         <action

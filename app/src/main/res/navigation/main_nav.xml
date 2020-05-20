@@ -25,7 +25,6 @@
     <!-- feature1 内部有着独立的 graph-->
     <include-dynamic
         android:id="@+id/feature1"
-        app:graphPackage="com.flywith24.dynamicfeaturedemo.feature1"
         app:graphResName="feature1_nav"
         app:moduleName="feature1" />
 
@@ -48,6 +47,8 @@
         android:label="Feature2TwoFragment"
         app:moduleName="feature2"
         tools:layout="@layout/fragment_feature2" />
+
+    <!-- 直接引用 feature2 内部的 activity-->
     <activity
         android:id="@+id/feature2Activity"
         android:name="com.flywith24.dynamicfeaturedemo.feature2.Feature2Activity"
